@@ -1,4 +1,4 @@
-/**
+/*
  * Riddima Mobile & Electronic Shop
  * Interactive functionality with backend integration
  */
