@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddima Mobile & Electronic Shop | Premium Gadgets & Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Riddima</span>
+                <span class="logo-sub">Mobile & Electronics</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Search products..." id="searchInput" autocomplete="off">
+                    <button class="btn-icon search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-badge">Welcome to the Future of Tech</p>
+            <h1>Premium Electronics<br><span class="gradient-text">At Your Fingertips</span></h1>
+            <p class="hero-desc">Discover the latest smartphones, gadgets, and electronic devices. Quality products, unbeatable prices, and expert service.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#categories" class="btn btn-outline">Browse Categories</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="device-showcase">
+                <img src="https://images.unsplash.com/photo-1746123726090-c8e262cb3341?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dml2byUyMHNtYXJ0cGhvbmV8ZW58MHx8MHx8fDA%3D" alt="Vivo smartphone" class="hero-device-img hero-phone">
+                <img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c21hcnQlMjB0dnxlbnwwfHwwfHx8MA%3D%3D" alt="Smartphone" class="hero-device-img hero-phone-2">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300" alt="Smartwatch" class="hero-device-img hero-watch">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Bar -->
+    <section class="features-bar">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🚚</span>
+                    <div>
+                        <strong>Free Delivery</strong>
+                        <!-- <span>On orders over 10000</span> -->
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔄</span>
+                    <div>
+                        <strong>Easy Returns</strong>
+                        <span>30-day return policy</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🛡️</span>
+                    <div>
+                        <strong>Warranty</strong>
+                        <span>1-2 year warranty</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💬</span>
+                    <div>
+                        <strong>24/7 Support</strong>
+                        <span>Expert assistance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured</span>
+                <h2>Best Sellers</h2>
+                <p>Handpicked premium devices loved by our customers</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <article class="product-card" data-search="vivo v30 pro smartphone 50mp camera 80w amoled">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1687168593635-370120784edc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dml2byUyMHBob25lfGVufDB8fDB8fHww">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Smartphones</span>
+                        <h3>Vivo V30 Pro</h3>
+                        <p class="product-desc">50MP camera, 80W fast charging, AMOLED display</p>
+                        <div class="product-footer">
+                            <span class="price">₹36,955</span>
+                            <a class="btn-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-search="vivo x100 smartphone zeiss dimensity 120w">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1755318535396-cdb062dc60bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHZpdm98ZW58MHx8MHx8fDA%3D">
+                        <span class="product-badge sale">Best deal</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Smartphones</span>
+                        <h3>Vivo X100</h3>
+                        <p class="product-desc">Zeiss optics, Dimensity 9300, 120W charging</p>
+                        <div class="product-footer">
+                            <span class="price"><s>₹58,999</s> ₹52,999</span>
+                            <a class="btn-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-search="hp elitebook laptop intel i7 16gb ram">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618410320928-25228d811631?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aHAlMjBlbGl0ZWJvb2t8ZW58MHx8MHx8fDA%3D" alt="Laptop">
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Laptops</span>
+                        <h3>HP EliteBook G40 Laptop</h3>
+                        <p class="product-desc">Intel i7, 16GB RAM, lightweight design</p>
+                        <div class="product-footer">
+                            <span class="price"> ₹205,334</span>
+                            <a class="btn-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-search="wireless earbuds audio noise cancellation">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600" alt="Wireless earbuds">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Audio</span>
+                        <h3>Wireless Pro Earbuds</h3>
+                        <p class="product-desc">Active noise cancellation, 30hr battery</p>
+                        <div class="product-footer">
+                            <span class="price">₹2,500</span>
+                            <a class="btn-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-search="smart watch elite wearables health gps">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Smartwatch">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wearables</span>
+                        <h3>Smart Watch Elite</h3>
+                        <p class="product-desc">Health tracking, GPS, 7-day battery</p>
+                        <div class="product-footer">
+                            <span class="price">₹1,999</span>
+                            <a class="btn-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-search="pro tablet m2 liquid retina">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=600" alt="Tablet">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Tablets</span>
+                        <h3>Pro Tablet 12.9"</h3>
+                        <p class="product-desc">M2 chip, Liquid Retina XDR display</p>
+                        <div class="product-footer">
+                            <span class="price">₹39,999</span>
+                            <a class="btn-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Browse</span>
+                <h2>Shop by Category</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYhXqeenDbFw-WX4gYmbzmdwJN0EeV9eyeUQ&s" alt="Smartphones">
+                    </div>
+                    <h3>Smartphones</h3>
+                    <span>Vivo & latest models</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Laptops">
+                    </div>
+                    <h3>Laptops & PCs</h3>
+                    <span>Work & play</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="Audio">
+                    </div>
+                    <h3>Audio</h3>
+                    <span>Headphones & speakers</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Wearables">
+                    </div>
+                    <h3>Wearables</h3>
+                    <span>Smartwatches & bands</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" alt="Accessories">
+                    </div>
+                    <h3>Accessories</h3>
+                    <span>Cables, chargers & more</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400" alt="TV & Home">
+                    </div>
+                    <h3>TV & Home</h3>
+                    <span>Smart home devices</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Our Story</span>
+                    <h2>Trusted Electronics Retailer Since 2015</h2>
+                    <p>Riddima Mobile & Electronic Shop has been serving tech enthusiasts with premium devices and exceptional service. We partner with leading brands to bring you the latest innovations at competitive prices.</p>
+                    <ul class="about-stats">
+                        <li>
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </li>
+                        <li>
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Brand Partners</span>
+                        </li>
+                        <li>
+                            <span class="stat-number">4.5</span>
+                            <span class="stat-label">Average Rating</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-card-inner">
+                            <span class="quote-icon">"</span>
+                            <p>Best electronics shop in town! Great selection and the staff really knows their stuff.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">JD</div>
+                                <div>
+                                    <strong>Deepesh</strong>
+                                    <span>Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Get 10% Off Your First Order</h2>
+                <p>Subscribe to our newsletter for exclusive deals and tech updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Visit Our Store</strong>
+                            <p>Talawali chanda ,AB road, Indore</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Call Us</strong>
+                            <p>+91 6269609651</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@riddima.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-hours">
+                        <strong>Store Hours</strong>
+                        <p>Mon - Sat: 9:00 AM - 10:00 PM</p>
+                        <p>Sunday: 10:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-map">
+                <h3>Find Us on Google Map</h3>
+                <div class="map-embed">
+                    <iframe
+                        src="https://www.google.com/maps?q=Garipipliya+Rd,+Talawali+Chanda,+Indore,+Madhya+Pradesh+453771&output=embed"
+                        width="100%"
+                        height="230"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Riddima</span>
+                        <span class="logo-sub">Mobile & Electronics</span>
+                    </a>
+                    <p>Your trusted destination for premium electronics and mobile devices.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram"><i class="fi fi-brands-instagram"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Riddima Mobile & Electronic Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Results Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
